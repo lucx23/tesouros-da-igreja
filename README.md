@@ -17,20 +17,19 @@ Este projeto é um site desenvolvido com o objetivo de evangelizar por meio da t
 - **JavaScript**
 
 ## 📁 Estrutura do projeto
-📁 projeto-carlo-acutis/
-├── index.html
-├── style.css
-├── script.js
-├── /img
-│ └── imagens do site
-├── /pages
-│ ├── paginasdosite
+📁 projeto-carlo-acutis/<br>
+├── index.html<br>
+├── style.css<br>
+├── script.js<br>
+├── /img<br>
+│ └── imagens do site<br>
+├── /pages<br>
+│ ├── paginasdosite<br>
 
 
 ## 📷 Prévia
 
-> *Adicione aqui uma imagem ou gif do site funcionando*  
-> *(Você pode usar ferramentas como [LiceCap](https://www.cockos.com/licecap/) ou gravar com o OBS)*
+
 
 ## 🎯 Objetivo
 
