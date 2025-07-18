@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesouros da igreja</title>
+    <meta name="description" content="Descubra os milagres, frases de Santos e acontecimentos da nossa igreja. Inspirado pelo Beato Carlo Acutis.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#milagres">Milagres</a></li>
+            <li><a href="#nossa-senhora">Nossa Senhora</a></li>
+            <li><a href="#santos">Santos</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+        </ul>
+    </header>
+    <main class="container">
+        <div class="page1" id="inicio">
+            <div class="container-left">
+                <h1 data-aos="fade-up">Tesouros da</h1>
+                <h1 class="libre" data-aos="fade-right">Igreja</h1>
+                <p data-aos="fade-left">Nesse site, você encontra os milagres, frases de Santos e acontecimentos que ocorreram/ocorrem em nossa igreja!</p>
+                
+                <button onclick="location.href='#milagres'">Ver Milagres</button>
+            </div>
+            
+            <div class="container-right">
+                <img src="./images/santos/carlo.jpg" alt="Imagem do Beato Carlo Acutis">
+                <p>O criador do site também sentiu uma forte inspiração no legado do Beato Carlo Acutis , futuro Santo da Igreja</p>
+            </div>
+        </div>
+        
+        <div class="page2" id="milagres">
+            <img src="images/titulo.png" alt="Título da página" style="width: 10%;">
+            <div class="title" data-aos="fade-up">
+                <h1>Milagres</h1>
+                <p>Aqui estão alguns dos milagres mais notáveis que ocorreram em nossa igreja.</p>
+            </div>
+            
+            <div class="search">
+                <form data-aos="fade-up">
+                    <label for="search" style="font-weight: bold;">Pesquisar Milagre:</label><br>
+                    <input type="text" id="search" name="search" placeholder="Digite o nome do milagre..."><br>
+                    <button type="submit" id="search-button" onclick="location.href='#cards'">Buscar</button>
+                    
+                    <div class="response">
+                        <p id="search-response"></p>
+                    </div>
+                </form>
+                <div class="filter" id="filter">
+                    <a id="filter-link">
+                        <img src="images/Filter.png" alt="">
+                        <p style="font-family: var(--fonte3); font-weight: bold;">Filtrar<br>Milagres</p>
+                    </a>
+                </div>
+                <div class="filter-options" id="filter-options">
+                    <ul>
+                        <li><a href="#" class="filter-option" data-filter="all">Todos</a></li>
+                        <li><a href="#" class="filter-option" data-filter="eucaristia">Século</a></li>
+                        <li><a href="#" class="filter-option" data-filter="santissima">Santo</a></li>
+                        <li><a href="#" class="filter-option" data-filter="nossa-senhora">Nossa Senhora</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            
+            
+            <div class="content" id="cards">
+                <div class="card">
+                    <img src="images/milagres/m01.png" alt="Milagre 1">
+                    <h2>Milagre de Lanciano</h2>
+                    <p>Durante uma missa, a hóstia consagrada se transformou em carne e o vinho em sangue real. As amostras foram preservadas e até hoje são objeto de estudo e veneração.</p>
+                </div>
+                <div class="card">
+                    <img src="images/milagres/m02.jpg" alt="Milagre 2">
+                    <h2>Milagre de Bolsena-Orvieto</h2>
+                    <p>Um sacerdote duvidava da presença real de Cristo na hóstia. Durante a consagração, a hóstia sangrou, manchando o altar. Este evento inspirou a festa do Corpo de Cristo (Corpus Christi).</p>
+                </div>
+                <div class="card">
+                    <img src="images/milagres/m03.jpg" alt="Milagre 3">
+                    <h2>Milagre de Siena</h2>
+                    <p>Uma hóstia consagrada que havia sido guardada em uma caixa queimada por acidente foi recuperada intacta, sem sinais de dano, como sinal da presença divina.</p>
+                </div>
+                <div class="card">
+                    <img src="images/milagres/santissimo.jpg" alt="Milagre 4">
+                    <h2>Milagre do Santíssimo Sacramento</h2>
+                    <p>Uma aparição milagrosa do Santíssimo Sacramento que trouxe cura e conversão para muitos fiéis, demonstrando o poder da Eucaristia na vida dos cristãos.</p>
+                </div>
+                <div class="card">
+                    <img src="images/milagres/m04.webp" alt="Milagre 5">
+                    <h2>Milagre de Nossa Senhora de Fátima</h2>
+                    <p>As aparições de Nossa Senhora aos três pastorinhos em Fátima, incluindo o famoso Milagre do Sol, presenciado por milhares de pessoas em 1917.</p>
+                </div>
+                <div class="card">
+                    <img src="images/milagres/m05.jpg" alt="Milagre 6">
+                    <h2>Cura Milagrosa de Lourdes</h2>
+                    <p>Inúmeras curas inexplicáveis pela medicina ocorreram no santuário de Lourdes, onde Nossa Senhora apareceu para Santa Bernadette Soubirous.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="page3" id="nossa-senhora">    
+            <img src="images/tit2.png" alt="Título da página" data-aos="fade-up">
+            <div class="content">
+                <div class="container-left" data-aos="fade-right">
+                    <img src="images/santos/nsra.png" alt="Imagem de Nossa Senhora">
+                </div>
+                <div class="container-right">
+                    <h2 data-aos="fade-left">Sobre Nossa Senhora</h2>
+                    <p data-aos="fade-left">Nossa Senhora é uma figura central na fé cristã, venerada como a mãe de Jesus Cristo. Ela é vista como um símbolo de pureza, amor e compaixão. Sua vida e virtudes inspiram milhões de fiéis ao redor do mundo.</p>
+                    <p data-aos="fade-left">Ao longo da história, Nossa Senhora tem sido invocada em momentos de necessidade, trazendo conforto e esperança aos que recorrem a ela. Suas aparições em diversos lugares, como Fátima e Lourdes, são testemunhos de sua presença contínua na vida dos cristãos.</p>
+                    <br>
+                    <a href="nsra.html" data-aos="fade-up">Saber Mais</a>
+                    <a href="#milagres" data-aos="fade-up">Pesquisar milagres dela</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page4" id="santos">
+            <img src="images/titulo.png" alt="Título da página" data-aos="fade-up" style="width: 10%;">
+            <div class="title" data-aos="fade-up">
+                <h1>Conheça alguns Santos</h1>
+                <p>Estes santos são exemplos de fé, amor e dedicação a Deus, inspirando-nos a viver uma vida mais plena e significativa.</p>
+            </div>
+            <div class="content-santos">
+                <div class="santo-card" data-aos="fade-right">
+                    <img src="images/santos/franscisco.jpg" alt="São Francisco de Assis">
+                    <h2>São Francisco de Assis</h2>
+                    <p>Conhecido por sua vida de simplicidade e amor à natureza, São Francisco fundou a Ordem dos Franciscanos e é o padroeiro dos animais e do meio ambiente.</p>
+                </div>
+                <div class="santo-card" data-aos="fade-left">
+                    <img src="images/santos/santa_terezinha.jpg" alt="Santa Teresinha do Menino Jesus">
+                    <h2>Santa Teresinha do Menino Jesus</h2>
+                    <p>Com seu caminho de santidade baseado na simplicidade e no amor, Santa Teresinha é conhecida como a "santa das rosas" e doutora da Igreja.</p>
+                </div>
+                <div class="santo-card" data-aos="fade-right">
+                    <img src="images/santos/padre-pio.jpg" alt="São Padre Pio de Pietrelcina">
+                    <h2>São Padre Pio</h2>  
+                    <p>Famoso pelos estigmas e dons espirituais, São Pio dedicou sua vida ao confessionário e à oração, sendo um grande intercessor pela cura e reconciliação.</p>
+                </div>
+                <div class="santo-card" data-aos="fade-left">
+                    <img src="images/santos/cassia.jpg" alt="Santa Rita de Cássia">
+                    <h2>Santa Rita de Cássia</h2>
+                    <p>Padroeira das causas impossíveis, Santa Rita enfrentou muitos sofrimentos em sua vida, tornando-se símbolo de fé, perdão e perseverança.</p>
+                </div>
+                <div class="santo-card" data-aos="fade-up">
+                    <img src="images/santos/carlo.jpg" alt="Beato Carlo Acutis">
+                    <h2>Beato Carlo Acutis</h2>
+                    <p>Jovem apaixonado pela Eucaristia e pela tecnologia, Carlo usou a internet para evangelizar, deixando um legado de fé viva para os jovens.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <img src="images/titulo.png" alt="Logo">
+            <p>Contato: <a href="mailto:luczinn4@gmail.com" target="_blank">luczinn4@gmail.com</a></p>
+            <div class="social-media">
+                <ul>
+                    <li><a href="https://www.instagram.com/lg.23_?igsh=NTA4dTUzbWp0c3Vx" target="_blank">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://github.com/lucx23" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 - Tesouros da Igreja. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Lucas Gabriel</p>
+    </footer>
+        
+    <button id="btnUp">Topo</button>
+
+    <script src="script.js"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+</body>
+</html>
