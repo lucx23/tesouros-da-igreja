@@ -28,7 +28,7 @@ Este projeto é um site desenvolvido com o objetivo de evangelizar por meio da t
 
 
 ## 📷 Prévia
-
+<img src="tesouros-da-igreja/print.png">
 
 
 ## 🎯 Objetivo
