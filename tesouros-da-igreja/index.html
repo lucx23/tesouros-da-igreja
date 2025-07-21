@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#milagres">Milagres</a></li>
-            <li><a href="#nossa-senhora">Nossa Senhora</a></li>
-            <li><a href="#santos">Santos</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-        </ul>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#milagres">Milagres</a></li>
+                <li><a href="#nossa-senhora">Nossa Senhora</a></li>
+                <li><a href="#santos">Santos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+            </ul>
+        </nav>
+        <button id="btn-mobile" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
     </header>
     <main class="container">
         <div class="page1" id="inicio">
@@ -36,7 +43,7 @@
         </div>
         
         <div class="page2" id="milagres">
-            <img src="images/titulo.png" alt="Título da página" style="width: 10%;">
+            <img src="images/titulo.png" alt="Título da página" data-aos="fade-up">
             <div class="title" data-aos="fade-up">
                 <h1>Milagres</h1>
                 <p>Aqui estão alguns dos milagres mais notáveis que ocorreram em nossa igreja.</p>
@@ -123,7 +130,7 @@
         </div>
 
         <div class="page4" id="santos">
-            <img src="images/titulo.png" alt="Título da página" data-aos="fade-up" style="width: 10%;">
+            <img src="images/titulo.png" alt="Título da página" data-aos="fade-up">
             <div class="title" data-aos="fade-up">
                 <h1>Conheça alguns Santos</h1>
                 <p>Estes santos são exemplos de fé, amor e dedicação a Deus, inspirando-nos a viver uma vida mais plena e significativa.</p>
@@ -159,19 +166,32 @@
     </main>
     
     <footer>
+        <img src="images/titulo.png" alt="Logo">
         <div class="footer-content">
-            <img src="images/titulo.png" alt="Logo">
-            <p>Contato: <a href="mailto:luczinn4@gmail.com" target="_blank">luczinn4@gmail.com</a></p>
-            <div class="social-media">
-                <ul>
-                    <li><a href="https://www.instagram.com/lg.23_?igsh=NTA4dTUzbWp0c3Vx" target="_blank">Instagram</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="https://github.com/lucx23" target="_blank">GitHub</a></li>
-                </ul>
+            <div id="footer-up">
+                <div class="social-media">
+                    <ul>
+                        <li><a href="https://www.instagram.com/lg.23_?igsh=NTA4dTUzbWp0c3Vx" target="_blank">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="https://github.com/lucx23" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+                <p>&copy; 2025 - Tesouros da Igreja. Todos os direitos reservados.</p>
+                <p>Desenvolvido por Lucas Gabriel</p>
+            </div>
+            <div id="footer-down">
+                <p>Contato: <a href="mailto:luczinn4@gmail.com" target="_blank">luczinn4@gmail.com</a></p>
+                <!-- <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form> -->
             </div>
         </div>
-        <p>&copy; 2025 - Tesouros da Igreja. Todos os direitos reservados.</p>
-        <p>Desenvolvido por Lucas Gabriel</p>
     </footer>
         
     <button id="btnUp">Topo</button>

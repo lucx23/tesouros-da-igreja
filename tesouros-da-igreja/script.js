@@ -2,7 +2,7 @@
 const btnUp = document.getElementById("btnUp");
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY > window.innerHeight && document.body.scrollHeight < window.innerHeight){ // Verifica se a rolagem é maior que 350 pixels e se o conteúdo é menor que a altura da janela (não aparece o botão para celulares)
+    if(window.scrollY > 450){ // Verifica se a rolagem é maior que 350 pixels
         // Exibe o botão "Topo"
         btnUp.style.display = "block"; // Mostra o botão quando rolar para baixo
     } else { // Se a rolagem for menor ou igual a 350 pixels
@@ -105,4 +105,21 @@ filter.addEventListener("click", () => {
     const isVisible = filterOptions.style.display === "block";
     // Se estiver visível, esconde ("none"). Se não, mostra ("block").
     filterOptions.style.display = isVisible ? "none" : "block";
+});
+
+const btnMobile = document.getElementById("btn-mobile");
+const navBar = document.getElementById("navbar");
+
+// Adiciona um evento de clique ao botão móvel
+btnMobile.addEventListener("click", () => {
+    // Verifica se o menu está visível (display === "block")
+    const isVisible = navBar.style.display === "block";
+    // Se estiver visível, esconde ("none"). Se não, mostra ("block").
+    navBar.style.display = isVisible ? "none" : "block";
+    if(navBar.style.display === "block") {
+        btnMobile.style.color = "#ffffff"
+    } else{
+        btnMobile.style.color = "#4E342E";
+    }
+
 });
